@@ -1,0 +1,32 @@
+
+<odoo>
+
+    <data>
+
+    <record id="view_donation_date_form" model='ir.ui.view'>
+        <field name="name">view.donation.date.form</field>
+        <field name="model">donor_data.donation_date</field>
+        <field name="arch" type='xml'>
+            <form >
+                <sheet>
+                    <group name='data' string='Datos de donación'>
+                        <field name="date_time_donation" options="{'format': 'DD/MM/YYYY'}"/>
+                        <field name="type_donation" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="view_donation_date_tree" model="ir.ui.view">
+        <field name="name">view.donation.date.tree</field>
+        <field name="model">donor_data.donation_date</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date_time_donation" />
+                <field name="type_donation" />
+            </tree>
+        </field>
+    </record>
+    </data>
+</odoo>

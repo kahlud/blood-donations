@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_blood_donation_blood_donation,blood_donation.blood_donation,model_blood_donation_donor_data,blood_donation.donor_data_access,1,0,0,0
+access_donation_date,donation_date,model_donor_data_donation_date,base.group_user,1,1,1,1
